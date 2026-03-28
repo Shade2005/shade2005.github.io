@@ -6,11 +6,10 @@
     <title>Privacy Policy - Dua Connect</title>
     <style>
         :root {
-            /* Extracted from adaptive-icon.jpg */
-            --bg-color: #EBE6D9; /* Light Beige Background */
-            --text-primary: #A68A64; /* Darker Gold/Brown Text */
-            --text-secondary: #7D6B50; /* Darker variant for body text contrast */
-            --accent-color: #C5B08D; /* Lighter Gold Accent */
+            --bg-color: #EBE6D9;
+            --text-primary: #A68A64;
+            --text-secondary: #7D6B50;
+            --accent-color: #C5B08D;
             --white: #FFFFFF;
         }
 
@@ -22,9 +21,36 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
+        }
+
+        nav {
+            background-color: var(--white);
+            width: 100%;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(166, 138, 100, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--text-secondary);
         }
 
         .container {
@@ -34,6 +60,8 @@
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(166, 138, 100, 0.1);
+            width: 100%;
+            box-sizing: border-box;
         }
 
         header {
@@ -114,8 +142,7 @@
         /* Mobile Responsiveness */
         @media (max-width: 600px) {
             .container {
-                margin: 0;
-                border-radius: 0;
+                margin: 20px 10px;
                 padding: 20px;
                 box-shadow: none;
             }
@@ -126,6 +153,12 @@
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="ads.html">App-Ads.txt</a>
+    </nav>
 
     <div class="container">
         <header>
